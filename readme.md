@@ -3,19 +3,41 @@
 - Uma forma rápida de controlar logs da sua aplicação.
 ## Examples
 ```ts
-/* js_easylogger on locaStorage "do not change"*/
+/* js_easylogger on locaStorage "do not change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
-const app_name = 'app_testing'
+const appName = 'app_summary_custom'
 
-export function log(..._args: any) {
-  const logging = JSON.parse(localStorage.getItem(easylogger) || '{}');
-  const shouldLog = Boolean(logging[app_name]);
+type LogType = 'log' | 'warn' | 'info' | 'error'
 
-  if (shouldLog) {
-    console.log(`%c\u25CF ${app_name}:`, 'font-weight: bold', `\n${_args.join('\n')}`)
-  }
+function handleLog(type: LogType, ..._args: unknown[]): void {
+  const loggingData = window.localStorage.getItem(easylogger)
+  const logging = loggingData ? JSON.parse(loggingData) : {}
+  const shouldLog = Boolean(logging?.[appName])
+
+  shouldLog &&
+    console[type](
+      `%c\u25CF ${appName}:`,
+      'font-weight: bold',
+      `\n${_args.join('\n')}`
+    )
+}
+
+export function log(..._args: any): void {
+  handleLog('log', ..._args)
+}
+
+export function warn(..._args: any): void {
+  handleLog('warn', ..._args)
+}
+
+export function info(..._args: any): void {
+  handleLog('info', ..._args)
+}
+
+export function error(..._args: any): void {
+  handleLog('error', ..._args)
 }
 ```
 
