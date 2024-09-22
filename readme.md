@@ -14,7 +14,7 @@ export function log(..._args: any) {
   const shouldLog = Boolean(logging[app_name]);
 
   if (shouldLog) {
-    console.log(`${app_name}\n${_args.join('\n')}`);
+    console.log(`%c\u25CF ${app_name}:`, 'font-weight: bold', `\n${_args.join('\n')}`)
   }
 }
 ```
