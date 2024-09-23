@@ -17,11 +17,7 @@ function handleLog(type: LogType, ..._args: unknown[]): void {
   const shouldLog = Boolean(logging?.[appName])
 
   shouldLog &&
-    console[type](
-      `%c\u25CF ${appName}:`,
-      'font-weight: bold',
-      `\n${_args.join('\n')}`
-    )
+    console[type](`%c\u25CF ${appName}:`, 'font-weight: bold', '\n', ..._args)
 }
 
 export function log(..._args: any): void {
