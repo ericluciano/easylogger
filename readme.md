@@ -47,12 +47,12 @@ const waitForLocalStorage = (): Promise<void> => {
     checkStorage()
   })
 }
-/* ex: easylogger.ts */
-/* js_easylogger on locaStorage "don't change" */
+
+/* js_easylogger on locaStorage "do not change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
-const appName = 'app_testing'
+const appName = 'app_quickview'
 
 type LogType = 'log' | 'warn' | 'info' | 'error'
 
