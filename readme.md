@@ -12,6 +12,15 @@
 npm install easy-logger-dev
 ```
 
+#### CDN 
+```
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.7/dist/easy-logger-dev.js
+```
+**esm**
+```
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.7/dist/easy-logger-dev.esm.js
+```
+
 ## Examples
 1. React w/ Typescript
 ```ts
