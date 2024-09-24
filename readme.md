@@ -3,15 +3,15 @@
 - The easiest way to control the console: log, info, warn and error.
 
 
-## Download
+## Download Extension
 [ 📦 ***Easy Logger Extension***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
 
+## NPM
 [ 📦 ***NpmJS***](https://www.npmjs.com/package/easy-logger-dev)
 
 ```bash
 npm install easy-logger-dev
 ```
-
 ## CDN 
 ```
 https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.js
