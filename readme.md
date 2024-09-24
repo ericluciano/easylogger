@@ -9,8 +9,17 @@
 [ 📦 ***npm***](https://www.npmjs.com/package/easy-logger-dev)
 
 ## Examples
+1. React w/ Typescript
+```ts
+import { setLogName, log, info, warn, error } from 'easy-logger-dev'
 
-1. Typescript
+setLogName('app_testing')
+log('log')
+info('info')
+warn('warn')
+error('error')
+```
+2. Typescript
 ```ts
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
@@ -46,7 +55,7 @@ export function error(..._args: any): void {
 }
 ```
 
-2. Javascript
+3. Javascript
 ```js
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
