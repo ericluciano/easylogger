@@ -3,7 +3,9 @@
 - Uma forma rápida de controlar logs da sua aplicação.
 
 ## Download
-[ 📦 ***Download***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+[ 📦 ***Easy Logger***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+
+[ 📦 ***npm***](https://www.npmjs.com/package/easy-logger-dev)
 
 ## Examples
 
