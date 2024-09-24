@@ -12,13 +12,13 @@
 npm install easy-logger-dev
 ```
 
-#### CDN 
+## CDN 
 ```
-https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.7/dist/easy-logger-dev.js
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.8/dist/easy-logger-dev.js
 ```
 **esm**
 ```
-https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.7/dist/easy-logger-dev.esm.js
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.8/dist/easy-logger-dev.esm.js
 ```
 
 ## Examples
@@ -70,7 +70,7 @@ export function error(..._args: any): void {
 ```
 3. Javascript w/ Html
 ```html
-<script src="./node_modules/easy-logger-dev/dist/easy-logger-dev.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.8/dist/easy-logger-dev.js"></script>
 <script>
   EasyLogger.setLogName('app_testing')
   // Install Extension before
