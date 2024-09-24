@@ -34,6 +34,19 @@ error('error')
 ```
 2. Typescript
 ```ts
+const waitForLocalStorage = (): Promise<void> => {
+  return new Promise<void>(resolve => {
+    const checkStorage = () => {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        resolve()
+      } else {
+        setTimeout(checkStorage, 100) // Verifica a cada 100ms
+      }
+    }
+
+    checkStorage()
+  })
+}
 /* ex: easylogger.ts */
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
@@ -43,8 +56,9 @@ const appName = 'app_testing'
 
 type LogType = 'log' | 'warn' | 'info' | 'error'
 
-function handleLog(type: LogType, ..._args: unknown[]): void {
-  const loggingData = window.localStorage.getItem(easylogger)
+async function handleLog(type: LogType, ..._args: unknown[]): Promise<void> {
+  await waitForLocalStorage()
+  const loggingData = localStorage.getItem(easylogger)
   const logging = loggingData ? JSON.parse(loggingData) : {}
   const shouldLog = Boolean(logging?.[appName])
 
