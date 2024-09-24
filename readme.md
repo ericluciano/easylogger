@@ -22,7 +22,7 @@ https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.esm.js
 ```
 
 ## Examples
-1. React w/ Typescript
+1. React w/ Typescript and npmjs
 ```ts
 import { setLogName, log, info, warn, error } from 'easy-logger-dev'
 
@@ -32,8 +32,9 @@ info('info')
 warn('warn')
 error('error')
 ```
-2. Typescript
+2. Typescript without npmjsm
 ```ts
+/*ex: logger.ts*/
 const waitForLocalStorage = (): Promise<void> => {
   return new Promise<void>(resolve => {
     const checkStorage = () => {
@@ -82,7 +83,7 @@ export function error(..._args: any): void {
   handleLog('error', ..._args)
 }
 ```
-3. Javascript w/ Html
+3. Javascript w/ Html and CDN
 ```html
 <script src="https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.js"></script>
 <script>
@@ -95,7 +96,7 @@ export function error(..._args: any): void {
 </script>
 ```
 
-4. Javascript
+4. Javascript without npmjs
 ```js
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
