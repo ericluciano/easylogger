@@ -1,9 +1,10 @@
 # Extension Easy Logger
+- An easy to use logger controlled by localStorage.
 - The easiest way to control the console: log, info, warn and error.
-- Uma forma rápida de controlar logs da sua aplicação.
+
 
 ## Download
-[ 📦 ***Easy Logger***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+[ 📦 ***Easy Logger Extension***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
 
 [ 📦 ***npm***](https://www.npmjs.com/package/easy-logger-dev)
 
