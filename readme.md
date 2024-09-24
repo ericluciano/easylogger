@@ -14,18 +14,20 @@ npm install easy-logger-dev
 ```
 ## CDN 
 ```
-https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.js
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.12/dist/easy-logger-dev.js
 ```
 **esm**
 ```
-https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.esm.js
+https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.12/dist/easy-logger-dev.esm.js
 ```
 
 ## Examples
+***Important: App name should contain only letters and underscores.***
+
 1. React w/ Typescript and npmjs
 ```ts
 import { setLogName, log, info, warn, error } from 'easy-logger-dev'
-
+/* Important: App name should contain only letters and underscores. */
 setLogName('app_testing')
 log('log')
 info('info')
@@ -53,6 +55,7 @@ const waitForLocalStorage = (): Promise<void> => {
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
+/* Important: App name should contain only letters and underscores. */
 const appName = 'app_testing'
 
 type LogType = 'log' | 'warn' | 'info' | 'error'
@@ -85,10 +88,11 @@ export function error(..._args: any): void {
 ```
 3. Javascript w/ Html and CDN
 ```html
-<script src="https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.9/dist/easy-logger-dev.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.12/dist/easy-logger-dev.js"></script>
 <script>
+/* Important: App name should contain only letters and underscores. */
   EasyLogger.setLogName('app_testing')
-  // Install Extension before
+  
   EasyLogger.log('log');
   EasyLogger.info('info');
   EasyLogger.warn('warn');
