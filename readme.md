@@ -9,7 +9,7 @@
 
 1. Typescript
 ```ts
-/* js_easylogger on locaStorage "do not change" */
+/* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
@@ -45,7 +45,7 @@ export function error(..._args: any): void {
 
 2. Javascript
 ```js
-/* js_easylogger on locaStorage "do not change" */
+/* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
