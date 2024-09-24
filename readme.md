@@ -25,6 +25,7 @@ error('error')
 ```
 2. Typescript
 ```ts
+/* ex: easylogger.ts */
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
 
