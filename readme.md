@@ -54,8 +54,20 @@ export function error(..._args: any): void {
   handleLog('error', ..._args)
 }
 ```
+3. Javascript w/ Html
+```html
+<script src="./node_modules/easy-logger-dev/dist/easy-logger-dev.js"></script>
+<script>
+  EasyLogger.setLogName('app_testing')
+  // Install Extension before
+  EasyLogger.log('log');
+  EasyLogger.info('info');
+  EasyLogger.warn('warn');
+  EasyLogger.error('error');
+</script>
+```
 
-3. Javascript
+4. Javascript
 ```js
 /* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
