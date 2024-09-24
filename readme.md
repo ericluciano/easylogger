@@ -1,13 +1,19 @@
 # Extension Easy Logger
 - The easiest way to control the console: log, info, warn and error.
 - Uma forma rápida de controlar logs da sua aplicação.
+
+## Download
+[ 📦 ***Download***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+
 ## Examples
+
+1. Typescript
 ```ts
 /* js_easylogger on locaStorage "do not change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
-const appName = 'app_summary_custom'
+const appName = 'app_testing'
 
 type LogType = 'log' | 'warn' | 'info' | 'error'
 
@@ -33,6 +39,40 @@ export function info(..._args: any): void {
 }
 
 export function error(..._args: any): void {
+  handleLog('error', ..._args)
+}
+```
+
+2. Javascript
+```js
+/* js_easylogger on locaStorage "do not change" */
+const easylogger = 'js_easylogger'
+
+/* app_name name your app visible on console */
+const appName = 'app_testing'
+
+function handleLog(type,..._args) {
+  const loggingData = window.localStorage.getItem(easylogger)
+  const logging = loggingData ? JSON.parse(loggingData) : {}
+  const shouldLog = Boolean(logging?.[appName])
+
+  shouldLog &&
+    console[type](`%c\u25CF ${appName}:`, 'font-weight: bold', '\n ', ..._args)
+}
+
+function log(..._args) {
+  handleLog('log', ..._args)
+}
+
+function warn(..._args) {
+  handleLog('warn', ..._args)
+}
+
+function info(..._args) {
+  handleLog('info', ..._args)
+}
+
+function error(..._args) {
   handleLog('error', ..._args)
 }
 ```
