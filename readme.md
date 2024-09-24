@@ -32,7 +32,7 @@ info('info')
 warn('warn')
 error('error')
 ```
-2. Typescript without npmjsm
+2. Typescript without npmjs
 ```ts
 /*ex: logger.ts*/
 const waitForLocalStorage = (): Promise<void> => {
