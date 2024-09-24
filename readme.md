@@ -6,7 +6,11 @@
 ## Download
 [ 📦 ***Easy Logger Extension***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
 
-[ 📦 ***npm***](https://www.npmjs.com/package/easy-logger-dev)
+[ 📦 ***NpmJS***](https://www.npmjs.com/package/easy-logger-dev)
+
+```bash
+npm install easy-logger-dev
+```
 
 ## Examples
 1. React w/ Typescript
