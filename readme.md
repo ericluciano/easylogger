@@ -52,7 +52,7 @@ const waitForLocalStorage = (): Promise<void> => {
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
-const appName = 'app_quickview'
+const appName = 'app_testing'
 
 type LogType = 'log' | 'warn' | 'info' | 'error'
 
