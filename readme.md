@@ -1,4 +1,13 @@
 # Extension Easy Logger
+[pt-br]   
+Easy Logger tem a capacidade de ativar os logs de forma seletiva, apenas para aplicativos ou funcionalidades específicas. Você não precisa mais filtrar manualmente cada log: basta configurar quais apps você deseja monitorar, e o Easy Logger fará o resto.
+- Um logger fácil de usar controlado pelo localStorage.
+- A maneira mais fácil de controlar o console: log, info, warn e error.
+
+[en]
+
+Easy Logger has the ability to selectively activate logs, only for specific apps or functionalities. You no longer need to manually filter each log: just configure which apps you want to monitor, and Easy Logger will do the rest.
+
 - An easy to use logger controlled by localStorage.
 - The easiest way to control the console: log, info, warn and error.
 
