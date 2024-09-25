@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Logger Tester</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/easy-logger-dev@1.0.12/dist/easy-logger-dev.js"></script>
+    <script>
+        /* Important: App name should contain only letters and underscores. */
+        /* app_testing is default */
+        EasyLogger.setLogName('app_testing')
+
+        EasyLogger.log('log');
+        EasyLogger.info('info');
+        EasyLogger.warn('warn');
+        EasyLogger.error('error');
+    </script>
+
+<script>
+    /* Important: App name should contain only letters and underscores. */
+    /* add entry app_new on your extension */
+    EasyLogger.setLogName('app_new')
+
+    EasyLogger.log('log new');
+    EasyLogger.info('info new');
+    EasyLogger.warn('warn new');
+    EasyLogger.error('error new');
+</script>
+</body>
+
+</html>

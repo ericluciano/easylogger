@@ -1,6 +1,6 @@
 # Extension Easy Logger
 [pt-br]
-     
+
 Easy Logger tem a capacidade de ativar os logs de forma seletiva, apenas para aplicativos ou funcionalidades específicas. Você não precisa mais filtrar manualmente cada log: basta configurar quais apps você deseja monitorar, e o Easy Logger fará o resto.
 - Um logger fácil de usar controlado pelo localStorage.
 - A maneira mais fácil de controlar o console: log, info, warn e error.
@@ -61,7 +61,7 @@ const waitForLocalStorage = (): Promise<void> => {
   })
 }
 
-/* js_easylogger on locaStorage "do not change" */
+/* js_easylogger on locaStorage "don't change" */
 const easylogger = 'js_easylogger'
 
 /* app_name name your app visible on console */
