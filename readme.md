@@ -14,7 +14,8 @@ Easy Logger has the ability to selectively activate logs, only for specific apps
 
 
 ## Download Extension
-[ 📦 ***Easy Logger Extension***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+[ 📦 ***Easy Logger: Chrome, Brave***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)
+[ 📦 ***Easy Logger: Firefox***](https://addons.mozilla.org/pt-BR/firefox/addon/easy-logger/)
 
 ## NPM
 [ 📦 ***NpmJS***](https://www.npmjs.com/package/easy-logger-dev)
