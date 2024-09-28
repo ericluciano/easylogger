@@ -12,6 +12,9 @@ Easy Logger has the ability to selectively activate logs, only for specific apps
 - An easy to use logger controlled by localStorage.
 - The easiest way to control the console: log, info, warn and error.
 
+## Video
+[![Thumbnail do vídeo](https://img.youtube.com/vi/Q1DbAdPhOSY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Q1DbAdPhOSY)
+
 
 ## Download Extension
 [ 📦 ***Easy Logger: Chrome, Brave***](https://chromewebstore.google.com/detail/easy-logger/enoegidahmndmbflkcnanembemogpddp)   
