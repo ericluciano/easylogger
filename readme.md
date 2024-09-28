@@ -13,7 +13,9 @@ Easy Logger has the ability to selectively activate logs, only for specific apps
 - The easiest way to control the console: log, info, warn and error.
 
 ## Video
-[![Thumbnail do vídeo](https://img.youtube.com/vi/Q1DbAdPhOSY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Q1DbAdPhOSY)
+<a href="https://www.youtube.com/watch?v=Q1DbAdPhOSY">
+  <img src="https://img.youtube.com/vi/Q1DbAdPhOSY/maxresdefault.jpg" alt="Thumbnail do vídeo" width="400" alt="Click to Play" title="Click to Play"/>
+</a>
 
 
 ## Download Extension
